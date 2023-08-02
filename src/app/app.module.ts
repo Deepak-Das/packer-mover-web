@@ -14,6 +14,7 @@ import { ListImageInfoComponent } from './pages/common/list-image-info/list-imag
 import { HomePageComponent } from './pages/common/home-page/home-page.component';
 import { LeftImageInfoComponent } from './pages/common/left-image-info/left-image-info.component';
 import { BannerBoxComponent } from './pages/common/banner-box/banner-box.component';
+import { BannerItemComponent } from './pages/common/banner-item/banner-item.component';
 
 
 
@@ -27,7 +28,8 @@ import { BannerBoxComponent } from './pages/common/banner-box/banner-box.compone
     ListImageInfoComponent,
     HomePageComponent,
     LeftImageInfoComponent,
-    BannerBoxComponent
+    BannerBoxComponent,
+    BannerItemComponent
   ],
   imports: [
     BrowserModule,
