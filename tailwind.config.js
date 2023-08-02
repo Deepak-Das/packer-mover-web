@@ -12,6 +12,10 @@ module.exports = {
     // fontSize:{
     //   "2xl":"1.82rem"
     // },
+    backgroundImage:{
+      'feature-1': "url('assets/image/feature_1.jpg')",
+
+    },
     extend: {},
   },
   plugins: [
