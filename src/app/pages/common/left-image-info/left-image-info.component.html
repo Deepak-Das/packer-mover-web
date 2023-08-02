@@ -1,0 +1,31 @@
+<div class="m-b  tw-py-2">
+  <div class="tw-container tw-mx-auto tw-flex tw-flex-col-reverse  md:tw-flex md:tw-flex-row md:tw-justify-between">
+    <div class="tw-grid tw-w-full tw-place-content-center">
+      <div class="tw-grid tw-grid-flow-row tw-grid-cols-2 tw-gap-2">
+        <div class="tw-h-40 tw-w-40 tw-bg-feature-1 tw-bg-cover"></div>
+        <div class="tw-h-40 tw-w-40 tw-bg-feature-1 tw-bg-cover"></div>
+        <div class="tw-h-40 tw-w-40 tw-bg-feature-1 tw-bg-cover"></div>
+        <div class="tw-h-40 tw-w-40 tw-bg-feature-1 tw-bg-cover"></div>
+      </div>
+    </div>
+
+    <div class="tw-px-2 md:tw-px-0">
+      <div>
+        <h6>{{title}}</h6>
+      </div>
+      <div>
+        <ul
+          *ngFor="let item of list; let i = index"
+          class="tw-list-none tw-p-0"
+        >
+          <li fl>
+            <p class="tw-font-semibold">
+              {{ item.title
+              }}<span class="tw-font-normal">{{ item.content }}</span>
+            </p>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </div>
+</div>

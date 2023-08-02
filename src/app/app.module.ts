@@ -12,6 +12,8 @@ import { ionCallOutline,ionMailOutline,ionLogoFacebook,ionLogoInstagram,ionLogoY
 import { WelcomeBoxComponent } from './pages/common/welcome-box/welcome-box.component';
 import { ListImageInfoComponent } from './pages/common/list-image-info/list-image-info.component';
 import { HomePageComponent } from './pages/common/home-page/home-page.component';
+import { LeftImageInfoComponent } from './pages/common/left-image-info/left-image-info.component';
+import { BannerBoxComponent } from './pages/common/banner-box/banner-box.component';
 
 
 
@@ -23,7 +25,9 @@ import { HomePageComponent } from './pages/common/home-page/home-page.component'
     FooterComponent,
     WelcomeBoxComponent,
     ListImageInfoComponent,
-    HomePageComponent
+    HomePageComponent,
+    LeftImageInfoComponent,
+    BannerBoxComponent
   ],
   imports: [
     BrowserModule,

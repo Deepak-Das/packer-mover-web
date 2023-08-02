@@ -14,6 +14,11 @@ module.exports = {
     // },
     backgroundImage:{
       'feature-1': "url('assets/image/feature_1.jpg')",
+      'icon-quote': "url('assets/icons/quote.png')",
+      'icon-mover': "url('assets/icons/mover.png')",
+      'icon-packing': "url('assets/icons/packing.png')",
+      'icon-requirement': "url('assets/icons/requirement.png')",
+   
 
     },
     extend: {},
