@@ -3,8 +3,8 @@ import { RouterModule, Routes } from '@angular/router';
 import { HomePageComponent } from './pages/home-page/home-page.component';
 import { AboutComponent } from './pages/about/about.component';
 import { PageNotFoundComponent } from './pages/page-not-found/page-not-found.component';
-import { ServiceComponent } from './pages/service/service.component';
-import { ContactComponent } from './pages/contact/contact.component';
+import { ContactPageComponent } from './pages/contact-page/contact-page.component';
+import { ServicePageComponent } from './pages/service-page/service-page.component';
 
 const routes: Routes = [
 
@@ -22,11 +22,11 @@ const routes: Routes = [
   },
   {
     path:'service',
-    component:ServiceComponent
+    component:ServicePageComponent
   },
   {
     path:'contact',
-    component:ContactComponent
+    component:ContactPageComponent
   },
   {
     path:'**',
