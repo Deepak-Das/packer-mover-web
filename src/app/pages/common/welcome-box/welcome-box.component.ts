@@ -3,11 +3,13 @@ import { Component,Input } from '@angular/core';
 @Component({
   selector: 'app-welcome-box',
   templateUrl: './welcome-box.component.html',
-  inputs:['title','content'],
+  inputs:['title','content','fontSize'],
   styleUrls: ['./welcome-box.component.scss'],
   // standalone:true
 })
 export class WelcomeBoxComponent {
+
+  fontSize="tw-text-2xl"
 
 
   title="Welcome to Shiva Packer and Mover"

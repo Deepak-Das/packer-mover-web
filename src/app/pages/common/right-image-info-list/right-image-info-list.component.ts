@@ -2,14 +2,14 @@ import { Component, Input } from '@angular/core';
 import {NgFor} from '@angular/common';
 
 @Component({
-  selector: 'app-list-image-info',
-  templateUrl: './list-image-info.component.html',
-  styleUrls: ['./list-image-info.component.scss'],
+  selector: 'app-right-image-info-list',
+  templateUrl: './right-image-info-list.component.html',
+  styleUrls: ['./right-image-info-list.component.scss'],
 })
 
 
 
-export class ListImageInfoComponent {
+export class RightImageInfoListComponent {
 
   @Input()
   list = [

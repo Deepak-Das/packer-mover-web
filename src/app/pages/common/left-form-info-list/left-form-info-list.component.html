@@ -1,0 +1,56 @@
+<div class="m-b  tw-py-2">
+    <div class="tw-container tw-mx-auto tw-flex tw-flex-col-reverse  md:tw-flex md:tw-flex-row-reverse md:tw-justify-between">
+      
+
+      <div class="tw-grid tw-place-content-center md:tw-container">
+
+        <div class="custom-gradient tw-p-4 tw-text-white tw-mx-3 tw-rounded-md ">
+          <form class="tw-text-white tw-flex tw-flex-col tw-items-center ">
+
+            <h5 class="tw-underline">Book Appoinment Now!!!</h5>
+  
+            <div class="mb-3 ">
+              <label for="name" class="form-label">Full Name</label>
+              <input type="text" class="form-control tw-text-black " id="name" aria-describedby="name">
+              <!-- <div id="emailHelp" class="form-text tw-text-red-500 ">We'll never share your email with anyone else.</div> -->
+            </div>
+            
+            <div class="mb-3">
+              <label for="Phone" class="form-label">Phone No.</label>
+              <input type="tel" class="form-control" id="phone">
+            </div>
+            
+            <div class="mb-3 ">
+              <label for="msg" class="form-label">Message</label>
+              <textarea type="text" class="form-control tw-text-black " id="msg" rows="3" ></textarea>
+              <!-- <div id="emailHelp" class="form-text tw-text-red-500 ">We'll never share your email with anyone else.</div> -->
+            </div>
+  
+            <button type="submit" class="btn tw-bg-[#B5A9FF] tw-text-white">Submit</button>
+          </form>
+  
+        </div>
+
+      </div>
+  
+      <div class="tw-px-2 md:tw-px-0">
+        <div>
+          <h5>{{title}}</h5>
+        </div>
+        <div>
+          <ul
+            *ngFor="let item of list; let i = index"
+            class="tw-list-none tw-p-0"
+          >
+            <li fl>
+              <p class="tw-font-semibold">
+                {{ item.title
+                }}<span class="tw-font-normal">{{ item.content }}</span>
+              </p>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </div>
+  

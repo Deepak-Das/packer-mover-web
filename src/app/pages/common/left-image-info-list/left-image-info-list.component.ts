@@ -1,11 +1,11 @@
 import { Component,Input } from '@angular/core';
 
 @Component({
-  selector: 'app-left-image-info',
-  templateUrl: './left-image-info.component.html',
-  styleUrls: ['./left-image-info.component.scss']
+  selector: 'app-left-image-info-list',
+  templateUrl: './left-image-info-list.component.html',
+  styleUrls: ['./left-image-info-list.component.scss']
 })
-export class LeftImageInfoComponent {
+export class LeftImageInfoListComponent {
 
   
   @Input()
