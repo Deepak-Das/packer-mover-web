@@ -12,6 +12,9 @@ import {NgFor} from '@angular/common';
 export class RightImageInfoListComponent {
 
   @Input()
+  title="Why Choose Shiva Packer and Mover?"
+
+  @Input()
   list = [
     {
       title: 'Professional Expertise: ',
@@ -35,5 +38,10 @@ export class RightImageInfoListComponent {
     },
   ];
 
+  @Input()
+  imgList=[]
+
+  @Input()
+  extraClass="tw-bg-yellow-200"
 
 }
