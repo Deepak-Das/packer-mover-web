@@ -23,6 +23,7 @@ import { PageNotFoundComponent } from './pages/page-not-found/page-not-found.com
 import { ContactPageComponent } from './pages/contact-page/contact-page.component';
 import { ContactFormComponent } from './pages/common/contact-form/contact-form.component';
 import { ServicePageComponent } from './pages/service-page/service-page.component';
+import { QuickCallToActionComponent } from './pages/common/quick-call-to-action/quick-call-to-action.component';
 
 
 
@@ -45,7 +46,8 @@ import { ServicePageComponent } from './pages/service-page/service-page.componen
     PageNotFoundComponent,
     ContactPageComponent,
     ContactFormComponent,
-    ServicePageComponent
+    ServicePageComponent,
+    QuickCallToActionComponent
   
   ],
   imports: [
