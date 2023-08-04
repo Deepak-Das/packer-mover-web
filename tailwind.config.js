@@ -15,6 +15,11 @@ module.exports = {
     // },
     backgroundImage:{
       'feature-1': "url('assets/image/feature_1.jpg')",
+      'local': "url('assets/image/local.png')",
+      'long': "url('assets/image/long_move.png')",
+      'packing': "url('assets/image/packing_service.png')",
+      'residential': "url('assets/image/residentail_moving.png')",
+      'commercial': "url('assets/image/commercial_move.jpg')",
       'icon-quote': "url('assets/icons/quote.png')",
       'icon-mover': "url('assets/icons/mover.png')",
       'icon-compare': "url('assets/icons/compare.png')",
