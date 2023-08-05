@@ -24,6 +24,7 @@ import { ContactPageComponent } from './pages/contact-page/contact-page.componen
 import { ContactFormComponent } from './pages/common/contact-form/contact-form.component';
 import { ServicePageComponent } from './pages/service-page/service-page.component';
 import { QuickCallToActionComponent } from './pages/common/quick-call-to-action/quick-call-to-action.component';
+import {  ReactiveFormsModule } from '@angular/forms';
 
 
 
@@ -47,7 +48,7 @@ import { QuickCallToActionComponent } from './pages/common/quick-call-to-action/
     ContactPageComponent,
     ContactFormComponent,
     ServicePageComponent,
-    QuickCallToActionComponent
+    QuickCallToActionComponent,
   
   ],
   imports: [
@@ -55,6 +56,7 @@ import { QuickCallToActionComponent } from './pages/common/quick-call-to-action/
     AppRoutingModule,
     NgbModule,
     NgIconsModule.withIcons({ ionCallOutline ,ionMailOutline,ionLogoFacebook,ionLogoInstagram,ionLogoYoutube}),
+    ReactiveFormsModule
 
 
   ],
