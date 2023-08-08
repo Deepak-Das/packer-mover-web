@@ -1,6 +1,12 @@
-<div class="custom-gradient  tw-m-8 tw-p-6 md:tw-px-16 tw-rounded-md tw-text-white md:tw-grid md:tw-grid-cols-4">
-  <div class=" md:tw-col-span-3 ">
-    <form [formGroup]="contact" (ngSubmit)="onSubmit()" class=" md:tw-pr-36   tw-items-center tw-text-white">
+<div
+  class="custom-gradient tw-m-8 tw-rounded-md tw-p-6 tw-text-white md:tw-grid md:tw-grid-cols-4 md:tw-px-16"
+>
+  <div class="md:tw-col-span-3">
+    <form
+      [formGroup]="contact"
+      (ngSubmit)="onSubmit()"
+      class="tw-items-center tw-text-white md:tw-pr-36"
+    >
       <h5 class="tw-text-[#008080]">Just say hello !</h5>
       <h5 class="tw-text-sm">let us know your requirment</h5>
 
@@ -13,11 +19,18 @@
             id="name"
             aria-describedby="name"
             placeholder="Enter full name here "
-            formControlName="name"
+            formControlName="fullName"
           />
           <div *ngIf="name?.invalid && (name?.dirty || name?.touched)">
-            <div *ngIf="name?.errors?.['required']" id="emailHelp" class="form-text tw-text-red-500 ">Full name required</div>
-        </div>        </div>
+            <div
+              *ngIf="name?.errors?.['required']"
+              id="emailHelp"
+              class="form-text tw-text-red-500"
+            >
+              Full name required
+            </div>
+          </div>
+        </div>
         <div class="mb-3">
           <label for="name" class="form-label">Location</label>
           <input
@@ -27,9 +40,10 @@
             aria-describedby="location"
             placeholder="Enter your city/state"
             formControlName="location"
-
           />
-          <div *ngIf="location?.invalid && (location?.dirty || location?.touched)">
+          <div
+            *ngIf="location?.invalid && (location?.dirty || location?.touched)"
+          >
             <div
               *ngIf="location?.errors?.['required']"
               id="emailHelp"
@@ -47,14 +61,24 @@
             class="form-control tw-bg-[#B5A9FF] tw-text-white placeholder:tw-text-white"
             id="phone"
             placeholder="Phone no."
-            formControlName="phone"
-
+            formControlName="phoneNo"
           />
           <div *ngIf="phone?.invalid && (phone?.dirty || phone?.touched)">
-              <div *ngIf="phone?.errors?.['required']" id="emailHelp" class="form-text tw-text-red-500 ">Phone Required</div>
-              <div *ngIf="phone?.errors?.['indianPhoneNumber']" id="emailHelp" class="form-text tw-text-red-500 ">wrong no.</div>
+            <div
+              *ngIf="phone?.errors?.['required']"
+              id="emailHelp"
+              class="form-text tw-text-red-500"
+            >
+              Phone Required
+            </div>
+            <div
+              *ngIf="phone?.errors?.['indianPhoneNumber']"
+              id="emailHelp"
+              class="form-text tw-text-red-500"
+            >
+              wrong no.
+            </div>
           </div>
-          
         </div>
       </div>
 
@@ -66,8 +90,7 @@
           id="msg"
           placeholder="Enter"
           rows="3"
-          formControlName="msg"
-
+          formControlName="message"
         ></textarea>
         <div *ngIf="msg?.invalid && (msg?.dirty || msg?.touched)">
           <div
@@ -78,20 +101,34 @@
             Message required
           </div>
         </div>
-        <div class="tw-text-2xl ">{{contact.value|json}}</div>
-
+        <!-- <div class="tw-text-2xl">{{ contact.value | json }}</div> -->
+        <div
+          class="alert alert-primary d-flex align-items-center tw-mt-1"
+          *ngIf="info"
+          role="alert"
+        >
+          <ng-icon name="ionInformationCircle" class="tw-mr-2"></ng-icon>
+          <div>Succesfully submit.</div>
+        </div>
+        <div
+          class="alert alert-danger d-flex align-items-center tw-mt-1"
+          *ngIf="fail"
+          role="alert"
+        >
+          <ng-icon name="ionWarning" class="tw-mr-2"></ng-icon>
+          <div>something went wrong re-try please</div>
+        </div>
       </div>
       <div class="tw-flex tw-justify-center">
-
-
-      <button type="submit" [disabled]="!contact.valid" class="btn tw-bg-[#008080] tw-text-white">
-        Submit
-      </button>
-
+        <button type="submit" class="btn tw-bg-[#008080] tw-text-white">
+          Submit
+        </button>
       </div>
     </form>
   </div>
-  <div class="tw-flex  tw-justify-between md:flex md:tw-flex-col md:tw-justify-center">
+  <div
+    class="md:flex tw-flex tw-justify-between md:tw-flex-col md:tw-justify-center"
+  >
     <div>
       <div class="tw-text-xl tw-font-medium tw-text-[#008080]">
         Contact Info
@@ -99,16 +136,18 @@
       <div class="tw-my-2 tw-font-medium">
         Barrackpore near new court,<br />pin-7000120
       </div>
-      <div class="tw-my-2 tw-font-medium">call us: <br/>9051156001<br/>7278608213</div>
+      <div class="tw-my-2 tw-font-medium">
+        call us: <br />9051156001<br />7278608213
+      </div>
     </div>
     <div>
-      <div class="tw-text-xl tw-font-medium tw-text-[#008080]">
-        Follow Us
-      </div>
-      <div class="tw-my-2 tw-font-medium tw-flex tw-flex-col md:flex md:tw-flex-row tw-gap-1">
-            <ng-icon size="1.5rem" name="ionLogoFacebook"></ng-icon>
-            <ng-icon size="1.5rem" name="ionLogoInstagram"></ng-icon>
-            <ng-icon size="1.5rem" name="ionLogoYoutube"></ng-icon>
+      <div class="tw-text-xl tw-font-medium tw-text-[#008080]">Follow Us</div>
+      <div
+        class="md:flex tw-my-2 tw-flex tw-flex-col tw-gap-1 tw-font-medium md:tw-flex-row"
+      >
+        <ng-icon size="1.5rem" name="ionLogoFacebook"></ng-icon>
+        <ng-icon size="1.5rem" name="ionLogoInstagram"></ng-icon>
+        <ng-icon size="1.5rem" name="ionLogoYoutube"></ng-icon>
       </div>
     </div>
   </div>

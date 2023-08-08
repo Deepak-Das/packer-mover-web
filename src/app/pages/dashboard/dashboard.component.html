@@ -1,0 +1,28 @@
+<div class="tw-container tw-mx-auto tw-grid tw-place-content-center">
+  <div class="tw-flex tw-gap md:tw-justify-between  ">
+    <h2>Dashboard</h2>
+    <button type="button" class="btn btn-danger" (click)="logOut()" >Logout</button>
+  </div>
+
+  <form [formGroup]="form" (submit)="onSubmit()">
+    <div class="mb-3">
+      <label for="date" class="form-label" >Date</label>
+      <div class="tw-flex tw-justify-center tw-items-center tw-gap-2">
+        <input
+        type="date"
+        class="form-control"
+        formControlName=""
+        id="date"
+        [value]="date"
+        aria-describedby="date"
+        formControlName="date"
+      />
+    <button type="submit" class="btn btn-info">Go</button>
+
+      </div>
+      <!-- <div id="date" class="form-text tw-text-red-500">Date Required</div>
+      <dir>{{ form.value | json }}</dir> -->
+    </div>
+  </form>
+  <app-table [tableList]="list"></app-table>
+</div>

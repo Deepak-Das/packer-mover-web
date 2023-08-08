@@ -1,0 +1,61 @@
+<div class="tw-container tw-mx-auto tw-grid tw-place-content-center tw-p-10">
+  <div class="wrapper fadeInDown">
+    <div id="formContent">
+      <!-- Tabs Titles -->
+
+      <!-- Icon -->
+      <div class="fadeIn first">
+        <ng-icon
+          name="ionLogInOutline"
+          size="80px"
+          class="tw-text-blue-300"
+        ></ng-icon>
+      </div>
+
+      <!-- Login Form -->
+      <form [formGroup]="login" (ngSubmit)="onSubmit()" >
+        <input
+          type="text"
+          id="login"
+          class="fadeIn second"
+          name="login"
+          placeholder="login"
+          formControlName="email"
+        />
+        <div *ngIf="email.invalid && (email.dirty || email.touched)">
+          <div
+            *ngIf="email.errors?.['required']"
+            id="emailHelp"
+            class="form-text tw-text-red-500"
+          >
+            email required
+          </div>
+        </div>
+        <input
+          type="password"
+          id="password"
+          class="fadeIn third"
+          name="login"
+          placeholder="password"
+          formControlName="password"
+        />
+        <div *ngIf="password.invalid && (password.dirty || password.touched)">
+          <div
+            *ngIf="password.errors?.['required']"
+            id="emailHelp"
+            class="form-text tw-text-red-500"
+          >
+            password required
+          </div>
+        </div>
+        <input type="submit" class="fadeIn fourth" value="Log In"  />
+        
+      </form>
+
+      <!-- Remind Passowrd -->
+      <!-- <div id="formFooter">
+        <a class="underlineHover" href="#">Forgot Password?</a>
+      </div> -->
+    </div>
+  </div>
+</div>

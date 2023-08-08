@@ -8,7 +8,7 @@ import { NavbarComponent } from './pages/common/navbar/navbar.component';
 import { FooterComponent } from './pages/common/footer/footer.component';
 
 import { NgIconsModule } from '@ng-icons/core'
-import { ionCallOutline,ionMailOutline,ionLogoFacebook,ionLogoInstagram,ionLogoYoutube } from '@ng-icons/ionicons';
+import { ionCallOutline,ionMailOutline,ionLogoFacebook,ionLogoInstagram,ionLogoYoutube,ionInformationCircle,ionWarning,ionLogInOutline } from '@ng-icons/ionicons';
 import { WelcomeBoxComponent } from './pages/common/welcome-box/welcome-box.component';
 import { RightImageInfoListComponent } from './pages/common/right-image-info-list/right-image-info-list.component';
 import { LeftImageInfoListComponent } from './pages/common/left-image-info-list/left-image-info-list.component';
@@ -24,7 +24,11 @@ import { ContactPageComponent } from './pages/contact-page/contact-page.componen
 import { ContactFormComponent } from './pages/common/contact-form/contact-form.component';
 import { ServicePageComponent } from './pages/service-page/service-page.component';
 import { QuickCallToActionComponent } from './pages/common/quick-call-to-action/quick-call-to-action.component';
-import {  ReactiveFormsModule } from '@angular/forms';
+import {  FormsModule, ReactiveFormsModule } from '@angular/forms';
+import {  HttpClientModule } from '@angular/common/http';
+import { LoginComponent } from './pages/login/login.component';
+import { DashboardComponent } from './pages/dashboard/dashboard.component';
+import { TableComponent } from './pages/common/table/table.component';
 
 
 
@@ -49,14 +53,19 @@ import {  ReactiveFormsModule } from '@angular/forms';
     ContactFormComponent,
     ServicePageComponent,
     QuickCallToActionComponent,
+    LoginComponent,
+    DashboardComponent,
+    TableComponent,
   
   ],
   imports: [
     BrowserModule,
     AppRoutingModule,
     NgbModule,
-    NgIconsModule.withIcons({ ionCallOutline ,ionMailOutline,ionLogoFacebook,ionLogoInstagram,ionLogoYoutube}),
-    ReactiveFormsModule
+    NgIconsModule.withIcons({ ionCallOutline ,ionMailOutline,ionLogoFacebook,ionLogoInstagram,ionLogoYoutube,ionInformationCircle,ionWarning,ionLogInOutline}),
+    ReactiveFormsModule,
+    HttpClientModule,
+    FormsModule
 
 
   ],
