@@ -8,6 +8,7 @@ import { ServicePageComponent } from './pages/service-page/service-page.componen
 import { LoginComponent } from './pages/login/login.component';
 import { DashboardComponent } from './pages/dashboard/dashboard.component';
 import { authGuard } from './authentication/auth.guard';
+import { FeedbackComponent } from './pages/feedback/feedback.component';
 
 const routes: Routes = [
 
@@ -39,6 +40,10 @@ const routes: Routes = [
     path:'dashboard',
     canActivate:[authGuard],
     component:DashboardComponent
+  },
+  {
+    path:'feedback',
+    component:FeedbackComponent
   },
   {
     path:'**',

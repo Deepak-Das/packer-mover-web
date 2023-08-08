@@ -8,7 +8,7 @@ import { NavbarComponent } from './pages/common/navbar/navbar.component';
 import { FooterComponent } from './pages/common/footer/footer.component';
 
 import { NgIconsModule } from '@ng-icons/core'
-import { ionCallOutline,ionMailOutline,ionLogoFacebook,ionLogoInstagram,ionLogoYoutube,ionInformationCircle,ionWarning,ionLogInOutline } from '@ng-icons/ionicons';
+import { ionCallOutline,ionMailOutline,ionLogoFacebook,ionLogoInstagram,ionLogoYoutube,ionInformationCircle,ionWarning,ionLogInOutline,ionStarHalf,ionStar,ionStarOutline } from '@ng-icons/ionicons';
 import { WelcomeBoxComponent } from './pages/common/welcome-box/welcome-box.component';
 import { RightImageInfoListComponent } from './pages/common/right-image-info-list/right-image-info-list.component';
 import { LeftImageInfoListComponent } from './pages/common/left-image-info-list/left-image-info-list.component';
@@ -29,6 +29,9 @@ import {  HttpClientModule } from '@angular/common/http';
 import { LoginComponent } from './pages/login/login.component';
 import { DashboardComponent } from './pages/dashboard/dashboard.component';
 import { TableComponent } from './pages/common/table/table.component';
+import { FeedbackComponent } from './pages/feedback/feedback.component';
+import { FeedbackFormComponent } from './pages/components/feedback-form/feedback-form.component';
+import { BarRatingModule } from 'ngx-bar-rating';
 
 
 
@@ -56,16 +59,19 @@ import { TableComponent } from './pages/common/table/table.component';
     LoginComponent,
     DashboardComponent,
     TableComponent,
+    FeedbackComponent,
+    FeedbackFormComponent,
   
   ],
   imports: [
     BrowserModule,
     AppRoutingModule,
     NgbModule,
-    NgIconsModule.withIcons({ ionCallOutline ,ionMailOutline,ionLogoFacebook,ionLogoInstagram,ionLogoYoutube,ionInformationCircle,ionWarning,ionLogInOutline}),
+    NgIconsModule.withIcons({ ionCallOutline ,ionMailOutline,ionLogoFacebook,ionLogoInstagram,ionLogoYoutube,ionInformationCircle,ionWarning,ionLogInOutline,ionStarHalf,ionStar,ionStarOutline}),
     ReactiveFormsModule,
     HttpClientModule,
-    FormsModule
+    FormsModule,
+    BarRatingModule
 
 
   ],
